@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="zh-cn" class="no-js">
-
 <head>
 <meta charset="UTF-8">
 <title>留言板</title>
@@ -10,10 +9,38 @@
 </head>
 
 <body>
-  <h1 id="test">test javascript</h1>
-  <p id="demo">test</p>
-  <p>test</p>
-  <button type="button" onclick="myFunction()">get it</button>
+  <div class="header">
+    <h1>留言板</h1>
+  </div>
+  
+  <div class="back-bar">
+    <ul>
+      <li class="button" onclick="disPlayTextBox()">新建</li>
+      <li class="button" onclick="getTextOfBox()">保存</li>
+      <li class="button" style="float: right;">关于</li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <div class="left-column"></div>
+
+    <div class="main-column">
+      <textarea id="text-box"></textarea>
+      <h2>Column</h2>
+      <p id="demo">TestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTest
+        TestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTet
+        TestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTesttTestTestTestTestTestTestTestTestTest
+      </p>
+    </div>
+    
+    <div class="right-column">
+      <h2 style="color:white;">历史留言</h2>
+      <p>TestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTest
+        TestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTest
+        TestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTest
+      </p>
+    </div>
+  </div>
 
   <script src="./js/main.js"></script>
 </body>

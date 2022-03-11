@@ -1,3 +1,125 @@
+/*
+*body style
+*/
+body{
+  background-color: rgb(29,42,53);
+}
+
+/*
+*button style
+*按键模板
+*/
 .button{
-    background-color: green;
+  color: white;
+  background-color: rgb(0, 197, 0);
+  width: 50px;
+  height: 20px;
+  text-align: center;
+  border: none;
+  padding: 15px 10px;
+  float:left;
+  margin: 1px;
+}
+.button:hover{
+  background-color: rgb(0, 90, 0);
+}
+
+/*
+*text box
+*文本框
+*/
+#text-box{
+  background-color: rgb(29,42,53);
+  color: white;
+  font-size: x-large;
+  border-radius: 5px;
+  resize: none;
+  width: 100%;
+  height: 800px;
+  display: none;
+}
+
+/*
+*background bar style
+*背景栏
+*/
+.back-bar ul{
+  background-color: rgb(13,23,33);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/*header style*/
+.header{
+  background-color: rgb(29,42,53);
+  color: white;
+  text-align: center;
+}
+
+/*
+*website layout
+*网站布局
+*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+/*
+*column display style
+*设置列的显示方式
+*/
+}
+.main-column{
+  color: white;
+  float: left;
+  width: 65%;
+  /*border: 1px solid rgb(67,73,76);*/
+  padding: 15px;
+  margin-top: 10px;
+  overflow-x: hidden;
+/*
+*main column display message board information
+*主要显示留言信息
+*/
+}
+.left-column{
+  float: left;
+  width: 5%;
+  padding: 15px;
+  margin-top: 10px;
+/*
+*padding space
+*用于填充空间
+*/  
+}
+.right-column{
+  float: left;
+  width: 15%;
+  padding: 15px;
+  margin-top: 10px;
+  overflow-x: hidden;
+/*
+*quick index message board information
+*用于快速访问留言信息
+*/  
+}
+
+@media screen and (max-width:600px) {
+  .main-column{
+    width: 100%;
+  /*
+  *main column display message board information
+  *主要显示留言信息
+  */
   }
+  .right-column{
+    width: 100%;
+  /*
+  *quick index message board information
+  *用于快速访问留言信息
+  */  
+  }
+
+}
